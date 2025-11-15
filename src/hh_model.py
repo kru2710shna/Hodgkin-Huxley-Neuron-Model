@@ -1,6 +1,6 @@
-from gating import dm_dt, dh_dt, dn_dt
-from parameters import Cm
-from currents import I_Na, I_K, I_L
+from .gating import dm_dt, dh_dt, dn_dt
+from .parameters import Cm
+from .currents import I_Na, I_K, I_L
 
 def hh_derivatives(t, y, I_ext):
     V, m, h, n = y
